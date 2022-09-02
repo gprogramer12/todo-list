@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'todo-list';
+  title: string = 'To Do List';
+  tasks: string[] = [];
+
+  updateTasks(newTask: string):void{
+    this.tasks.push(newTask);
+
+  }
+
+
 }
